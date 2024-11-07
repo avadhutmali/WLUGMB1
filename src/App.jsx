@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   const gradientStyle = {
-    minHeight: '200vh',
+    minHeight: '100vh',
     background: 'linear-gradient(#2b1055, #7597de)',
     backgroundAttachment: 'fixed',
 };

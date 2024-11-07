@@ -13,11 +13,11 @@ const Your3DModel = () => {
     }
   });
 
-  React.useEffect(() => {
-    if (actions && actions[Object.keys(actions)[0]]) {
-      actions[Object.keys(actions)[0]].play(); // Play the first animation
-    }
-  }, [actions]);
+  // React.useEffect(() => {
+  //   if (actions && actions[Object.keys(actions)[0]]) {
+  //     actions[Object.keys(actions)[0]].play(); // Play the first animation
+  //   }
+  // }, [actions]);
 
   return <primitive scale={0.012} object={scene} position={[0, -2.5, 0]} ref={modelRef} />;
 };

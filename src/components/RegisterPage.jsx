@@ -102,7 +102,7 @@ function RegisterForm() {
           {/* Custom File Upload Button */}
           <label
             htmlFor="photo-upload"
-            className="cursor-pointer px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300"
+            className="cursor-pointer px-2 py-1 md:px-4 p md:py-2 bg-blue-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300"
           >
             Choose File
           </label>
@@ -123,7 +123,7 @@ function RegisterForm() {
           {/* Custom File Upload Button */}
           <label
             htmlFor="resume-upload"
-            className="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            className="cursor-pointer px-2 py-1 md:px-4 p md:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
           >
             Choose File
           </label>
