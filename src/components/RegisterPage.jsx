@@ -96,31 +96,52 @@ function RegisterForm() {
           required
         />
 
-        <div className="photo flex gap-4">
+        <div className="photo flex gap-4 items-center">
           <div className="text text-white font-bold text-[2vh] md:text-xl">Photo</div>
+          
+          {/* Custom File Upload Button */}
+          <label
+            htmlFor="photo-upload"
+            className="cursor-pointer px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300"
+          >
+            Choose File
+          </label>
+          
           <input
             type="file"
             name="photo"
+            id="photo-upload"
             onChange={handleFileChange}
-            className="w-full  text-white"
+            className="hidden"
             required
           />
         </div>
 
-        <div className="resume flex gap-4">
+        <div className="resume flex gap-4 items-center">
           <div className="text text-white font-bold text-[2vh] md:text-xl">Resume</div>
+          
+          {/* Custom File Upload Button */}
+          <label
+            htmlFor="resume-upload"
+            className="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+          >
+            Choose File
+          </label>
+          
           <input
             type="file"
             name="resume"
+            id="resume-upload"
             onChange={handleFileChange}
-            className="w-full text-white"
+            className="hidden"
             required
           />
         </div>
 
+
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded mx-auto"
+          className="bg-blue-500 w-full text-white py-2 px-4 rounded mx-auto"
         >
           Register
         </button>
