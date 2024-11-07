@@ -33,19 +33,18 @@ function Page1() {
   }, []);
 
   const gradientStyle = {
-    height: '140vh',
     background: 'linear-gradient(#2b1055, #7597de)', 
     backgroundAttachment: 'fixed', 
   };
 
   return (
     <>
-    <div style={gradientStyle} className="relative z-0"> 
-      <img className='w-[30vh] absolute right-5 top-3' src="wlug.png" alt="" />
-      <img className="w-full absolute stars z-10" src="stars.png" alt="Stars" />
-      <img className="w-full absolute mix-blend-screen moon z-20" src="moon.png" alt="Moon" />
-      <img className="w-full absolute mountains z-30" src="mountains.svg" alt="Mountains" />
-      <div className="text text-white font-bold text-[10vh] absolute bottom-52 left-5 z-[35]">
+    <div style={gradientStyle} className="md:h-[140vh] h-[35vh]  relative z-0 "> 
+      <img className='md:w-[30vh] w-[10vh] absolute right-5 top-3' src="wlug.png" alt="" />
+      <img className="md:w-full absolute stars z-10 overflow-hidden" src="stars.png" alt="Stars" />
+      <img className="md:w-full absolute mix-blend-screen moon z-20" src="moon.png" alt="Moon" />
+      <img className="md:w-full absolute mountains z-30" src="mountains.svg" alt="Mountains" />
+      <div className="text text-white font-bold text-[3vh] md:text-[10vh] absolute md:bottom-52 bottom-24 left-5 z-[35]">
           WLUG
         </div>
       <img className="w-full absolute trees z-40" src="front_trees.svg" alt="Front Trees" />

@@ -62,7 +62,7 @@ function RegisterForm() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Name"
-          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
           required
         />
 
@@ -72,7 +72,7 @@ function RegisterForm() {
           value={formData.branch}
           onChange={handleChange}
           placeholder="Branch"
-          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
           required
         />
 
@@ -82,7 +82,7 @@ function RegisterForm() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
           required
         />
 
@@ -92,23 +92,23 @@ function RegisterForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
           required
         />
 
         <div className="photo flex gap-4">
-          <div className="text text-white font-bold text-xl">Photo</div>
+          <div className="text text-white font-bold text-[2vh] md:text-xl">Photo</div>
           <input
             type="file"
             name="photo"
             onChange={handleFileChange}
-            className="w-full text-white"
+            className="w-full  text-white"
             required
           />
         </div>
 
         <div className="resume flex gap-4">
-          <div className="text text-white font-bold text-xl">Resume</div>
+          <div className="text text-white font-bold text-[2vh] md:text-xl">Resume</div>
           <input
             type="file"
             name="resume"

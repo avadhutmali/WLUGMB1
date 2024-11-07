@@ -17,7 +17,6 @@ function App() {
     <div style={gradientStyle} className='h-full'>
       <Page1 />
       <Page2/>
-      <Footer/>
     </div>
     </>
   );
