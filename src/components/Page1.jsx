@@ -36,13 +36,13 @@ function Page1() {
 
   return (
     <>
-      <div style={gradientStyle} className="md:h-[120vh] h-[28vh] relative z-0 overflow-hidden"> 
+      <div style={gradientStyle} className="md:h-[120vh] h-[32vh] relative z-0 overflow-hidden"> 
         <a href="https://www.wcewlug.org/" className="z-[600]">
           <img className="md:w-[20vh] w-[10vh] absolute right-5 top-3 z-[600]" src="wlug.png" alt="" />
         </a>
         <img className="md:w-full md:-top-[20vh]  absolute stars z-10" src="stars.png" alt="Stars" />
         <img className="md:w-full md:-top-[10vh]  absolute mix-blend-screen moon z-20" src="moon.png" alt="Moon" />
-        <img className="md:w-full -top-[4vh] md:-top-[20vh] absolute mountains z-30" src="mountains.svg" alt="Mountains" />
+        <img className="md:w-full -top-[4vh] md:-top-[20vh] md:left-40 absolute mountains z-30" src="mountains.svg" alt="Mountains" />
         <div className="text    text-white font-bold text-[3vh] md:text-[10vh] absolute md:bottom-52 bottom-20 left-5 z-[35]">
         WLUG
         </div>

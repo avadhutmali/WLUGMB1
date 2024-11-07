@@ -4,8 +4,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 const Your3DModel = () => {
   const modelRef = useRef();
-  const { scene, animations } = useGLTF('/dancing_penguin.glb'); 
-  const { actions } = useAnimations(animations, modelRef);
+  const { scene} = useGLTF('/christmas_cute_penguin.glb'); 
 
   useFrame(() => {
     if (modelRef.current) {
@@ -13,13 +12,7 @@ const Your3DModel = () => {
     }
   });
 
-  // React.useEffect(() => {
-  //   if (actions && actions[Object.keys(actions)[0]]) {
-  //     actions[Object.keys(actions)[0]].play(); // Play the first animation
-  //   }
-  // }, [actions]);
-
-  return <primitive scale={0.012} object={scene} position={[0, -2.5, 0]} ref={modelRef} />;
+  return <primitive scale={80} object={scene} position={[0,1, 0]} ref={modelRef} />;
 };
 
 export default Your3DModel;
