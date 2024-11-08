@@ -97,7 +97,7 @@ function RegisterForm() {
         />
 
         <div className="photo flex gap-4 items-center">
-          <div className="text text-white font-bold text-[2vh] md:text-xl">Photo</div>
+          <div className="text w-16 md:w-24 text-white font-bold text-[2vh] md:text-xl">Photo</div>
           
           {/* Custom File Upload Button */}
           <label
@@ -118,7 +118,7 @@ function RegisterForm() {
         </div>
 
         <div className="resume flex gap-4 items-center">
-          <div className="text text-white font-bold text-[2vh] md:text-xl">Resume</div>
+          <div className="text w-16 md:w-24 text-white font-bold text-[2vh] md:text-xl">Resume</div>
           
           {/* Custom File Upload Button */}
           <label
