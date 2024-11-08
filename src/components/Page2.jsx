@@ -12,7 +12,7 @@ function Page2() {
             <div className="heading text-white font-bold text-xl md:text-[4vh]">Member Board Drive 1</div>
             <div className="heading text-white text-[1.9vh] text-xl md:text-[2.5vh] text-center">
               <p>Prepare to join a vibrant community of</p>
-              <p>Linux enthusiasts and emerse yourself in the</p>
+              <p>Linux enthusiasts and immerse yourself in the</p>
               <p>dynamic world of Open Source.</p>
               {/* <p>Prepare to join a vibrant community of  Linux enthusiasts and emerse yourself in the dynamic world of Open Source.</p>   */}
                
