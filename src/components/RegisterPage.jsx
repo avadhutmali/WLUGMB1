@@ -52,9 +52,9 @@ function RegisterForm() {
   };
 
   return (
-    <div className="w-full p-8 z-50">
-      <form onSubmit={handleSubmit} className="space-y-4 p-4 max-w-md mx-auto">
-        <h2 className="text-3xl font-bold text-center text-white">Register</h2>
+    <div className="w-full max-w-full px-4 py-6 sm:px-6 lg:px-8">
+      <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-white">Register</h2>
 
         <input
           type="text"
@@ -62,7 +62,7 @@ function RegisterForm() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Name"
-          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
 
@@ -72,7 +72,7 @@ function RegisterForm() {
           value={formData.branch}
           onChange={handleChange}
           placeholder="Branch"
-          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
 
@@ -82,7 +82,7 @@ function RegisterForm() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
 
@@ -92,21 +92,20 @@ function RegisterForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className="w-full h-[3.5vh] md:h-[5.5vh] px-2 py-1 md:px-4 md:py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none"
+          className="w-full px-4 py-2 bg-gray-900 text-white rounded-md border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
 
-        <div className="photo flex gap-4 items-center">
-          <div className="text w-16 md:w-24 text-white font-bold text-[2vh] md:text-xl">Photo</div>
-          
-          {/* Custom File Upload Button */}
+        <div className="flex flex-col gap-2 sm:flex-row items-center justify-between">
+          <label htmlFor="photo-upload" className="text-white font-bold">
+            Photo
+          </label>
           <label
             htmlFor="photo-upload"
-            className="cursor-pointer px-2 py-1 md:px-4 p md:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            className="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
           >
             Choose File
           </label>
-          
           <input
             type="file"
             name="photo"
@@ -117,17 +116,16 @@ function RegisterForm() {
           />
         </div>
 
-        <div className="resume flex gap-4 items-center">
-          <div className="text w-16 md:w-24 text-white font-bold text-[2vh] md:text-xl">Resume</div>
-          
-          {/* Custom File Upload Button */}
+        <div className="flex flex-col gap-2 sm:flex-row items-center justify-between">
+          <label htmlFor="resume-upload" className="text-white font-bold">
+            Resume
+          </label>
           <label
             htmlFor="resume-upload"
-            className="cursor-pointer px-2 py-1 md:px-4 p md:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            className="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
           >
             Choose File
           </label>
-          
           <input
             type="file"
             name="resume"
@@ -138,10 +136,9 @@ function RegisterForm() {
           />
         </div>
 
-
         <button
           type="submit"
-          className="bg-blue-500 w-full text-white py-2 px-4 rounded mx-auto"
+          className="w-full py-3 text-white font-semibold bg-blue-500 rounded-md hover:bg-blue-600 transition duration-300"
         >
           Register
         </button>
