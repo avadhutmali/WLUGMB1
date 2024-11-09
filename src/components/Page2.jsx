@@ -21,9 +21,16 @@ function Page2() {
        <div className="box h-[100vh] md:h-[70vh] w-[80vw] flex flex-col md:flex-row gap-10">
             <div className="tux h-[30vh] md:h-full w-full md:w-1/2 rounded-xl bg-opacity-[20%]  bg-zinc-400 relative">
             <Canvas dpr={[1, 2]}>
-                <ambientLight intensity={1} />
+                <ambientLight intensity={1.4} />
                 <ModelTux/>
-                <OrbitControls enableZoom={false} enablePan={true} />
+                <OrbitControls 
+                  enableZoom={false}
+                  enablePan={true}
+                  minPolarAngle={Math.PI / 2}  
+                  maxPolarAngle={Math.PI / 2}          
+                  enableDamping={true}                
+                  dampingFactor={0.05}
+                />
                 {/* <TrackballControls /> */}
             </Canvas>
             </div>
