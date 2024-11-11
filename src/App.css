@@ -1,3 +1,22 @@
 body{
     overflow-x: hidden;
+    @apply font-sans;
+}
+
+/* App.css or index.css */
+@keyframes animStar {
+  0% { opacity: 0.5; transform: translateY(0px); }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; transform: translateY(-2px); }
+}
+
+@keyframes animShootingStar {
+  0% { opacity: 1; transform: translate(-100px, -100px); }
+  100% { opacity: 0; transform: translate(0px, 0px); }
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFF;
 }

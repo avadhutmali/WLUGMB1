@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { useGLTF, useAnimations } from '@react-three/drei';
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 
 const Your3DModel = () => {
   const modelRef = useRef();
-  const { scene} = useGLTF('/christmas_cute_penguin.glb'); 
+  const { scene } = useGLTF("/christmas_cute_penguin.glb");
 
   useFrame(() => {
     if (modelRef.current) {
@@ -12,7 +12,9 @@ const Your3DModel = () => {
     }
   });
 
-  return <primitive scale={80} object={scene} position={[0,1, 0]} ref={modelRef} />;
+  return (
+    <primitive scale={80} object={scene} position={[0, 1, 0]} ref={modelRef} />
+  );
 };
 
 export default Your3DModel;
