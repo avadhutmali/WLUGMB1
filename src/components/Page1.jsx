@@ -100,9 +100,15 @@ function Page1() {
 
         {/* Register Button - Mobile Only */}
         <a href="#tux" onClick={handleSmoothScroll}>
-          <div className="register-forward-btn absolute z-50 h-10 font-bold text-xl w-24 bg-blue-700 text-center rounded-lg text-white bottom-10 translate-x-[150%] block md:hidden">
-            Register
-          </div>
+        <div
+          className="register-forward-btn absolute z-50 h-12 w-28 font-semibold text-[2vh]  tracking-wider text-blue-100 bg-gradient-to-r from-blue-600 to-blue-700 text-center rounded-full bottom-10 right-[35%] block md:hidden shadow-lg transition-all duration-200 hover:scale-105 hover:from-blue-700 hover:to-blue-800 flex items-center justify-center"
+        >
+          Register
+        </div>
+
+
+
+
         </a>
 
       </div>
