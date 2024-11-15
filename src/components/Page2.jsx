@@ -33,7 +33,17 @@ function Page2() {
 
         {/* Right Box with Register Page */}
         <div id="register" className="register flex-1 flex justify-center items-center w-full md:w-[50%] bg-opacity-[20%] bg-zinc-400 rounded-xl mb-5 sm:mb-0">
-          <RegisterPage />
+          {/* <RegisterPage /> */}
+          <div className="w-full p-4 sm:p-8 rounded-xl sm:mb-0">
+            <div className="space-y-6 max-w-md mx-auto bg-gray-900 p-6 rounded-lg shadow-lg text-center text-white text-3xl">
+              Registration Closed
+            </div>
+            {/* <div className="space-y-6 max-w-md mx-auto bg-gray-900 p-6 rounded-lg shadow-lg text-center text-white text-3xl">
+              All the best
+              <br></br>
+              See you Soon
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
