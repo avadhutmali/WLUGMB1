@@ -5,3 +5,61 @@
 body{
     overflow-x: hidden;
 }
+.border-div{
+  width: 500px;
+  height: 220px;
+  border: 2p solid white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-div::before{
+  content: "";
+  background-image: conic-gradient(
+      #4f56da 20deg,
+      transparent 120deg
+  );
+  width: 150%;
+  height: 300%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+.border-div::after{
+  content: "Registration Closed";
+  width: 480px;
+  height: 200px;
+  background: #111827 ;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 16px 14px 20px #0000008c;
+  font-size: 6vh;
+}
+
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .border-div {
+      height: 180px; /* Reduce height for smaller screens */
+      width: 380px;
+  }
+  .border-div::after {
+      font-size: 4vw; /* Reduce text size for mobile */
+      height: 160px;
+      width: 360px;
+      font-size: 3.5vh;
+  }
+}
